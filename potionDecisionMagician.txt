@@ -1,0 +1,21 @@
+
+     o . o         
+   o .     
+    o .    
+    _.            
+    )(            
+   (  )          
+    --           
+  --- 
+ | 1 | use healing potion  
+  --- 
+  --- 
+ | 2 | use mana potion 
+  --- 
+  ---
+ | 3 | Inventory 
+  ---
+  ---
+ | 4 | back 
+  ---
+  

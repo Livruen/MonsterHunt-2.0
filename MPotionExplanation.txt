@@ -1,0 +1,19 @@
+                                 ~~~~~~~~  Mana potion   ~~~~~~~~~
+                                                      
+      _____
+     `.___,'
+      (___)
+      <   >
+       ) (
+      /`-.\
+     /     \
+    / _    _\
+   :,' `-.' `:
+   |         |
+   :    M    ;
+    \       /
+     `.___.' SSt
+     
+     
+Mana potions give you mana. You need it to use Magic.
+                                 

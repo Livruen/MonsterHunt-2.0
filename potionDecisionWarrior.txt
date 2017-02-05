@@ -1,0 +1,18 @@
+
+     o . o         
+   o .     
+    o .    
+    _.            
+    )(            
+   (  )          
+    --           
+  --- 
+ | 1 | use healing potion  
+  --- 
+  ---
+ | 2 | Inventory 
+  ---
+  ---
+ | 3 | back 
+  ---
+  

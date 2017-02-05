@@ -1,0 +1,3 @@
+Shopping Queen, , Flower, 1
+Magic Armor, , Fairy, 1
+Magic weapon, Magic Armor, Rubin, 3
