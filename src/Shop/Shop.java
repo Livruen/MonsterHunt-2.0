@@ -87,10 +87,10 @@ public class Shop implements UsersInput{
 			buy(player, produktList.get(FAIRY));
 			break;
 		case HEALING_POTION_SHOP:
-			buy(player, produktList.get(HEALING_POTION));
+			buy(player, produktList.get(USE_HEALING_POTION));
 			break;
 		case MANA_POTION_SHOP:
-			buy(player, produktList.get(MANA_POTION));
+			buy(player, produktList.get(USE_MANA_POTION));
 			break;
 		case FLOWER:
 			buy(player,produktList.get(FLOWER));

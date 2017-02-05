@@ -1,0 +1,15 @@
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |                                                                |  
+ |   {-.-}  -  Player                    |xxx|  -  Wall           |
+ |   ^-_-^  -  Enemy                     ^o,o^  -  Boss enemy     |
+ |   --@--  -  The healing fountain      {$.$}  -  Shopkeeper     | 
+ |     i    -  Inventory & Parameters    {q.q}  -  Quest Master   |
+ |     o    -  save game                   e    -  Exit game      |
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Choose the direction you want to go.
+                          
+                                   W
+                                   |
+                              A –– + –– D
+                                   |
+                                   S

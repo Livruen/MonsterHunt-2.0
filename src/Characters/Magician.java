@@ -102,16 +102,16 @@ public class Magician extends Character {
 				reader.printPicture(POTION_DECISION_MAG);
 				int PlayersDecision = Integer.parseInt(bReader.readLine());
 				switch (PlayersDecision) {
-				case HEALING_POTION:
+				case USE_HEALING_POTION:
 						getHealable().drinkPotion(this);
-				case MANA_POTION:
+				case USE_MANA_POTION:
 					// Restore with Mana potion
 					magicBehavior.restoreWithPotion(inventory);
 					break;
 				case SHOW_INVENTORY:
 					inventory.showInventory();
 					break;
-				case BACK:
+				case BACK_TO_FIGHT:
 					decided = true;
 					break;
 				default:

@@ -116,12 +116,12 @@ public class Warrior extends Character {
 			try {
 				int PlayersDecision = Integer.parseInt(bReader.readLine());
 				switch (PlayersDecision) {
-				case HEALING_POTION:
+				case USE_HEALING_POTION:
 					getHealable().drinkPotion(this);;
 				case SHOW_INVENTORY:
 					inventory.showInventory();
 					break;
-				case BACK:
+				case BACK_TO_FIGHT:
 					decided = true;
 					break;
 				default:

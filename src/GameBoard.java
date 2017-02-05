@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.ArrayList;
+
 import Characters.Character;
 import Characters.Enemy;
 import Characters.Magician;
@@ -27,32 +29,32 @@ import Shop.Shop;
 
 @SuppressWarnings("serial")
 public class GameBoard implements Serializable, UsersInput {
-	
+
 	private Character player;
 	private Character enemy;
 	transient private Character[] PlayerList;
-	private Character[] enemyList;
+	private ArrayList<Character> enemyList;
 	private int defetedEnemys;
 	private QuestMaster questMaster;
 	private GameField field;
 	private static GameBoard singleton;
-	
-	
-	/* GoF Singleton Pattern - there must be just one GameBoard intance*/
+
+	/* GoF Singleton Pattern - there must be just one GameBoard intance */
 	private GameBoard() {
 	}
-	
-	public static GameBoard newInstance(){
-		if(singleton == null){
+
+	public static GameBoard newInstance() {
+		if (singleton == null) {
 			synchronized (GameBoard.class) {
-				if(singleton == null) {
+				if (singleton == null) {
 					singleton = new GameBoard();
 				}
 			}
-			
+
 		}
 		return singleton;
 	}
+
 	public void initializeGameParameters() {
 		CreatePlayerList();
 		CreateEnemyList();
@@ -63,12 +65,13 @@ public class GameBoard implements Serializable, UsersInput {
 
 	/* Creates the List of the enemys that are in the game */
 	private void CreateEnemyList() {
-		enemyList = new Character[5];
-		enemyList[0] = new Enemy(160, 42, 0.4, "TheCreature", 400);
-		enemyList[1] = new Enemy(130, 30, 0.4, "Tessa", 300);
-		enemyList[2] = new Enemy(100, 21, 0.5, "Skeletor", 250);
-		enemyList[3] = new Enemy(80, 15, 0.6, "Cat", 100);
-		enemyList[4] = new Enemy(40, 7, 0.7, "Goblin", 50);
+		enemyList = new ArrayList<>();
+		enemyList.add(new Enemy(160, 42, 0.4, "TheCreature", 400));
+		enemyList.add(new Enemy(130, 30, 0.4, "Tessa", 300));
+		enemyList.add(new Enemy(100, 21, 0.5, "Skeletor", 250));
+		enemyList.add(new Enemy(80, 15, 0.6, "Cat", 100));
+		enemyList.add(new Enemy(40, 7, 0.7, "Goblin", 50));
+
 	}
 
 	private void CreatePlayerList() {
@@ -93,7 +96,7 @@ public class GameBoard implements Serializable, UsersInput {
 		this.enemy = enemy;
 	}
 
-	public Character[] getEnemyList() {
+	public ArrayList<Character> getEnemyList() {
 		return enemyList;
 	}
 
@@ -159,6 +162,7 @@ public class GameBoard implements Serializable, UsersInput {
 			}
 		}
 	}
+
 	/*
 	 * *************************************************************************
 	 * ***********************************
@@ -179,7 +183,7 @@ public class GameBoard implements Serializable, UsersInput {
 				input = bReader.readLine();
 				String next = "";
 				next = switchToDirection(field, input, next);
-				
+
 				switch (next) {
 				case "Enemy":
 					attackEngine();
@@ -233,7 +237,7 @@ public class GameBoard implements Serializable, UsersInput {
 	}
 
 	private String switchToDirection(GameField field, String input, String next) {
-		
+
 		switch (input) {
 		case INVENTORY:
 			player.showParamAndInventory();
@@ -261,14 +265,13 @@ public class GameBoard implements Serializable, UsersInput {
 		return next;
 	}
 
-
 	protected void nextEnemy() {
 		if (enemyList == null) {
 			System.out.println("Empty enemy list.");
 			System.exit(0);
 		} else {
 			System.out.println("\n This is your enemy.\n");
-			setEnemy(enemyList[enemyList.length -1]);
+			setEnemy(enemyList.get(enemyList.size()-1));
 			ImageOutput((enemy.getName() + ".txt"));
 		}
 	}
@@ -300,7 +303,7 @@ public class GameBoard implements Serializable, UsersInput {
 			System.exit(0);
 			break;
 		case FLEE:
-			System.out.printf(" %s run away." , this.player.getName());
+			System.out.printf(" %s run away.", this.player.getName());
 			break;
 		}
 	}
@@ -329,6 +332,7 @@ public class GameBoard implements Serializable, UsersInput {
 						player.putIntoInventory(key);
 						enemy.getInventory().delete(key);
 						player.setMoney(player.getMoney() + enemy.getMoney());
+						enemyList.remove(enemyList.size()-1);
 					}
 					fighting = false;
 					winner = PLAYER;
