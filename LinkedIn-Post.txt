@@ -1,0 +1,20 @@
+Vor rund 15 Jahren habe ich mein eigenes Rollenspiel in Java entwickelt. Heute hole ich es für meinen Unterricht wieder hervor.
+
+MonsterHunt 2.0 ist ein Konsolenspiel mit Textgrafik. Krieger oder Magier wählen, ein zufällig erzeugtes Labyrinth erkunden, gegen Monster kämpfen und sich dem Kraken stellen.
+
+Damals habe ich unter anderem diese Funktionen umgesetzt:
+
+• zufällige Labyrinthgenerierung und Bewegung auf der Karte
+• Spielfiguren und Gegner mit eigenen Werten
+• rundenbasierte Kämpfe mit Angriff, Tränken und Flucht
+• Inventar, Gegenstände und Ausrüstung
+• Händler und Quests mit Belohnungen
+• Speichern und Laden des Spielstands
+
+Für meinen heutigen Unterricht liefert mir das Projekt konkrete Beispiele. Die Schülerinnen und Schüler können nachvollziehen, wie Bedingungen, Schleifen, Klassen und Dateizugriffe zusammen einen Spielablauf ergeben. Auch die Fehlersuche gehört dazu, wenn ein älteres Projekt wieder lauffähig werden soll.
+
+Den ursprünglichen Quellcode findet ihr auf GitHub. Wer Java lernt, ein kleines Rollenspiel untersuchen möchte oder selbst ein altes Projekt wiederentdecken will, kann gern hineinschauen.
+
+https://github.com/Livruen/MonsterHunt-2.0
+
+#Java #GameDevelopment #ProgrammierenLernen #Informatikunterricht #Softwareentwicklung

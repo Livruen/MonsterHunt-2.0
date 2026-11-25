@@ -1,0 +1,46 @@
+MonsterHunt 2.0 – Vorführversion
+================================
+
+Start unter Windows
+-------------------
+1. Installiere Temurin JDK 21. Wähle bei einem normalen 64-Bit-PC
+   Windows, x64, JDK und MSI. Aktiviere im Installer den Eintrag für PATH.
+   https://adoptium.net/temurin/releases?version=21
+2. Entpacke die ZIP vollständig.
+3. Öffne Start-MonsterHunt.cmd per Doppelklick.
+
+Du kannst im entpackten Ordner auch java -jar MonsterHunt.jar ausführen.
+Der Ordner enthält die Textdateien für Spielgrafik und Quests.
+
+Steuerung
+---------
+Jede Eingabe mit Enter bestätigen.
+N        Neues Spiel
+0 / 1    Krieger / Magier auswählen
+2        Beide Figuren anzeigen
+W A S D  Laufen
+I        Inventar. Mit E zurück zur Karte.
+O        Speichern
+L        Im Hauptmenü einen Spielstand laden
+E        Aktuelles Menü verlassen
+
+Beim Start steht N für ein neues Spiel bereit. O legt gameSave1.ser im
+entpackten Ordner an. Lade deinen gespeicherten Stand anschließend mit L
+im Hauptmenü. Der mitgelieferte alte Spielstand aus dem GitHub-Stand war
+bereits beschädigt.
+
+Quellcode in Eclipse öffnen
+---------------------------
+1. Eclipse IDE for Java Developers installieren.
+   https://www.eclipse.org/downloads/packages/
+2. File > Import > General > Existing Projects into Workspace wählen.
+3. Den entpackten Ordner MonsterHunt-2.0-Demo als Root Directory auswählen.
+4. src/Start.java öffnen und Run As > Java Application wählen.
+   Falls Eclipse nach einem JDK fragt, wähle das installierte JDK 21.
+   Der Projektordner ist das Arbeitsverzeichnis der Spielanwendung.
+
+Der Windows-Starter öffnet die beiliegende JAR. Starte Änderungen am
+Quellcode direkt über Eclipse.
+
+Original von Livruen Nati
+https://github.com/Livruen/MonsterHunt-2.0
