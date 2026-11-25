@@ -1,5 +1,6 @@
-# MonsterHunt 2.0
 
+# MonsterHunt 2.0
+![MonsterHunt 2.0](assets/monsterhunt-cover.png)
 ![MonsterHunt 2.0 – ASCII-Cover mit Krieger, Magier und Kraken](assets/monsterhunt-cover.png)
 
 Ein Java-Konsolen-Rollenspiel von **Livruen**. Wähle einen Krieger oder Magier, erkunde ein zufällig erzeugtes Labyrinth und stelle dich dem Kraken. Textgrafiken, Kämpfe, Gegenstände, Handel und Quests begleiten die Reise.
