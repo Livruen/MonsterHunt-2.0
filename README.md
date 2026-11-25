@@ -2,7 +2,7 @@
 
 ![MonsterHunt 2.0 – ASCII-Cover mit Krieger, Magier und Kraken](assets/monsterhunt-cover.png)
 
-Ein Java-Konsolen-Rollenspiel von **Livruen Nati**. Wähle einen Krieger oder Magier, erkunde ein zufällig erzeugtes Labyrinth und stelle dich dem Kraken. Textgrafiken, Kämpfe, Gegenstände, Handel und Quests begleiten die Reise.
+Ein Java-Konsolen-Rollenspiel von **Livruen**. Wähle einen Krieger oder Magier, erkunde ein zufällig erzeugtes Labyrinth und stelle dich dem Kraken. Textgrafiken, Kämpfe, Gegenstände, Handel und Quests begleiten die Reise.
 
 Das Projekt entstand vor rund 15 Jahren als Lernprojekt und wird heute wieder für die Vorführung im Unterricht aufbereitet. Das Cover orientiert sich an den ursprünglichen ASCII-Zeichnungen des Spiels. Das Spiel selbst zeigt Karte, Figuren und Menüs als Textgrafik in der Konsole.
 
